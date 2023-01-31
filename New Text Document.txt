@@ -1,0 +1,41 @@
+ <img src="Department.png"80%" alt="cs"> 
+
+ <img src="Teacher.jpg" alt="business">
+    <img src="Student.webp" alt="media">
+   <img src="courses.jpeg" alt="arts">
+
+
+
+<!--SHOWCASE-->
+   <showcase>
+       <h1>POPULAR COURSES WE OFFER</h1>
+       <div id="Department">
+           <div class="cs">
+               <h3>Computer Science</h3>
+               <img src="cse.jpeg" width="50%" alt="cs">
+               <a href="#" ><button class="apply">Apply Here</button></a>
+           </div>
+           <div class="Teacher">
+               <h3>Business Studies</h3>
+               <img src="business.jpeg" alt="business">
+               <a href="#" ><button class="apply">Apply Here</button></a>
+           </div>
+           <div class="Courses">
+               <h3>Media and Journalism</h3>
+               <img src="journalism.jpeg" alt="media">
+               <a href="#" ><button class="apply">Apply Here</button></a>
+           </div>
+           <div class="Courses">
+               <h3>Arts & Humanities</h3>
+               <img src="arts.jpeg" alt="arts">
+               <a href="#" ><button class="apply">Apply Here</button></a>
+           </div>
+           <div class="medical">
+               <h3>Medical Science</h3>
+               <img src="medical.jpeg" alt="ms">
+               <a href="#" ><button class="apply">Apply Here</button></a>
+           </div>
+       </div>
+   </showcase>
+<!--END OF SHOWCASE-->
+   

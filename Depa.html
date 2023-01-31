@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Department Name</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">Department</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Department </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faculty">Faculty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resources">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+        <h2></h2>
+        <div class="table-wrapper">
+            <table class="fl-table">
+                <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>clasess</th>
+                    <th>time</th>
+                    <th>Seats Avilable</th>
+                    <th>Seats reserved</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Math</td>
+                    <td>2</td>
+                    <td>10:00</td>
+                    <td>5</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>3</td>
+                    <td>8:00</td>
+                    <td>15</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>IT</td>
+                    <td>1</td>
+                    <td>2:00</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+            
+                <tbody>
+            </table>
+        </div>
+
+    
+      <section id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <form onsubmit="return validateForm()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" onclick="validateForm()" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+
+      <script>
+
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || message === "") {
+    alert("All fields are required");
+    return false;
+  }
+
+  return true;
+}
+      </script>
+      
+
+
+            
